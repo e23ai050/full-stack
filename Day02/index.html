@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Training Task Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏋️ Training Task Dashboard</h1>
+
+    <div class="form">
+      <input id="taskInput" placeholder="Enter training task" />
+      <input id="dateInput" type="date" />
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="completed">Completed</button>
+      <button data-filter="overdue">Overdue</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

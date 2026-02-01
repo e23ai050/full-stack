@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    
+    <div class="panel">
+        <h2>College Fee Calculator</h2>
+
+        <label>
+            Base Tuition Fee:
+            <input type="number" id="tuition" placeholder="Enter tuition fee">
+        </label>
+
+        <label>
+            Semester:
+            <select id="semester">
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+            </select>
+        </label>
+
+        <div class="addons">
+            <label><input type="checkbox" id="hostel"> Hostel Fee (₹30,000)</label>
+            <label><input type="checkbox" id="bus"> Bus Fee (₹8,000)</label>
+            <label><input type="checkbox" id="exam"> Exam Fee (₹2,000)</label>
+        </div>
+
+        <button id="calculate">Calculate</button>
+        <button id="reset">Reset</button>
+
+        <div id="error" class="error"></div>
+    </div>
+
+    
+    <div class="panel">
+        <h2>Fee Breakdown</h2>
+        <div id="result" class="result">
+            Please calculate to see the result.
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced To-Do List</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>📝 My Tasks</h1>
+
+    <form id="taskForm" class="task-form">
+      <input type="text" id="title" placeholder="Task Title" />
+      <textarea id="description" placeholder="Task Description"></textarea>
+      <input type="date" id="dueDate" />
+      <div class="error" id="errorMsg"></div>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="task-list" id="taskList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
